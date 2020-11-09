@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập sử dụng hàm 1</title>
+</head>
+<body>
+<input type="button" onclick="bai1()" value="Bai1">
+<input type="button" onclick="bai2()" value="Bai2">
+<input type="button" onclick="bai3()" value="Bai3">
+<script>
+    function bai1() {
+        alert("Xin chao");
+    }
+    function bai2(a) {
+        a=+parseInt(prompt("Nhập 1 số: "));
+        a+=1;
+        return (a);
+    }
+   function bai3(b,c) {
+     b=+parseInt(prompt("Nhập số thứ 1: "));
+     c=+parseInt(prompt("Nhập số thứ 2: "));
+       if (b>=c) {
+           return b + c;
+       }else document.write("2 số chưa phù hợp");
+   }
+    function addNumbers() {
+        firstNum = 4;
+        secondNum = 8;
+        result = firstNum + secondNum;
+        alert(result);
+        return result;
+    }
+       result = 0;
+       result = addNumbers();
+       alert(result);
+
+</script>
+</body>
+</html>
